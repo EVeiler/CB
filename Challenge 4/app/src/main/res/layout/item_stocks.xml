@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/rv_list"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="8dp">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="370dp"
+        android:layout_height="match_parent"
+        android:layout_marginHorizontal="16dp"
+        app:cardCornerRadius="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/tv_code_stocks"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/bbca"
+                android:textSize="28sp"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/tv_name_stocks"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginBottom="6dp"
+                android:text="@string/bank_bca_tbk"
+                android:textSize="12sp"
+                android:textColor="@color/black"
+                app:layout_constraintStart_toEndOf="@id/tv_code_stocks"
+                app:layout_constraintBottom_toBottomOf="@id/tv_code_stocks"/>
+
+            <TextView
+                android:id="@+id/tv_shares_stocks"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="@string/shares_xxxxxxxx"
+                android:textColor="@color/black"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tv_name_stocks"/>
+
+            <TextView
+                android:id="@+id/tv_equity_stocks"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/equity_xxxxxxx"
+                android:textColor="@color/black"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tv_shares_stocks"/>
+
+            <TextView
+                android:id="@+id/tv_net_profit_stocks"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/net_profit_xxxxx"
+                android:textColor="@color/black"
+                app:layout_constraintTop_toBottomOf="@id/tv_equity_stocks"
+                app:layout_constraintStart_toStartOf="parent"/>
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/guideline"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                app:layout_constraintGuide_begin="152dp"/>
+
+            <TextView
+                android:id="@+id/tv_pbv_stocks"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/pbv_xxxx"
+                android:textColor="@color/black"
+                app:layout_constraintStart_toStartOf="@id/guideline"
+                app:layout_constraintTop_toTopOf="@id/tv_equity_stocks"/>
+
+            <TextView
+                android:id="@+id/tv_eps_stocks"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/eps_xxxxxxx"
+                android:textColor="@color/black"
+                app:layout_constraintStart_toStartOf="@id/guideline"
+                app:layout_constraintTop_toBottomOf="@id/tv_pbv_stocks"/>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="72dp"
+                android:layout_height="56dp"
+                app:cardCornerRadius="10dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/green_10">
+
+                    <TextView
+                        android:id="@+id/tv_share_price_stocks"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="4dp"
+                        android:text="@string/_2760"
+                        android:textSize="18sp"
+                        android:textColor="@color/white"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+                </androidx.constraintlayout.widget.ConstraintLayout>
+            </androidx.cardview.widget.CardView>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

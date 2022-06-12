@@ -1,0 +1,35 @@
+<resources>
+    <string name="app_name">Challenge Chapter 4</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="code_stocks">Code Stocks</string>
+    <string name="name_stocks">Name Stocks</string>
+    <string name="net_profit_stocks">Net Profit Stocks</string>
+    <string name="shares_stocks">Shares Stocks</string>
+    <string name="shares_prices_stocks">Shares Prices Stocks</string>
+    <string name="equity_stocks">Equity Stocks</string>
+    <string name="cancel">Cancel</string>
+    <string name="add_stocks">Add Stocks</string>
+    <string name="pbv">PBV</string>
+    <string name="eps">EPS</string>
+    <string name="edit_stocks">Edit Stocks</string>
+    <string name="delete">Delete</string>
+    <string name="sign_in">Sign In</string>
+    <string name="username">Username</string>
+    <string name="password">Password</string>
+    <string name="login">Login</string>
+    <string name="tidak_memiliki_akun">Tidak memiliki akun?</string>
+    <string name="sign_up">Sign Up</string>
+    <string name="name">Name</string>
+    <string name="confirm_password">Confirm Password</string>
+    <string name="register">Register</string>
+    <string name="bbca">BBCA</string>
+    <string name="bank_bca_tbk">Bank BCA Tbk.</string>
+    <string name="shares_xxxxxxxx">Shares: xxxxxxxx</string>
+    <string name="equity_xxxxxxx">Equity: xxxxxxx</string>
+    <string name="net_profit_xxxxx">Net Profit: xxxxx</string>
+    <string name="pbv_xxxx">PBV: xxxx</string>
+    <string name="eps_xxxxxxx">EPS: xxxxxxx</string>
+    <string name="_2760">+2760</string>
+    <string name="name_user">Name User</string>
+</resources>

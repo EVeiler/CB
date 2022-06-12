@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".view.homepage.AddStocksFragment">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#F2F4EB">
+
+            <EditText
+                android:id="@+id/et_code_stocks"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/code_stocks"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:ignore="Autofill,TextFields" />
+
+            <EditText
+                android:id="@+id/et_name_stocks"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/name_stocks"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/et_code_stocks"
+                tools:ignore="Autofill,TextFields" />
+
+            <EditText
+                android:id="@+id/et_equity_stocks"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/equity_stocks"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/et_name_stocks"
+                tools:ignore="Autofill,TextFields" />
+
+            <EditText
+                android:id="@+id/et_net_profit_stocks"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/net_profit_stocks"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/et_equity_stocks"
+                tools:ignore="Autofill,TextFields" />
+
+            <EditText
+                android:id="@+id/et_share_stocks"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/shares_stocks"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/et_net_profit_stocks"
+                tools:ignore="Autofill,TextFields" />
+
+            <EditText
+                android:id="@+id/et_price_share_stocks"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/shares_prices_stocks"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/et_share_stocks"
+                tools:ignore="Autofill,TextFields" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btn_cancel_save"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="24dp"
+                android:text="@string/cancel"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/et_price_share_stocks"/>
+
+            <Button
+                android:id="@+id/btn_add_stocks"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="8dp"
+                android:backgroundTint="@color/green_10"
+                android:text="@string/add_stocks"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                app:layout_constraintEnd_toStartOf="@id/btn_cancel_save"
+                app:layout_constraintTop_toBottomOf="@id/et_price_share_stocks"/>
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+</androidx.constraintlayout.widget.ConstraintLayout>

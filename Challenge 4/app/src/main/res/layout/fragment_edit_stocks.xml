@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".view.homepage.EditStocksFragment">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#F2F4EB">
+
+            <EditText
+                android:id="@+id/et_edit_code_stocks"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/code_stocks"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                android:inputType="text"
+                tools:ignore="Autofill" />
+
+            <EditText
+                android:id="@+id/et_edit_name_stocks"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/name_stocks"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/et_edit_code_stocks"
+                android:inputType="text"
+                tools:ignore="Autofill" />
+
+            <EditText
+                android:id="@+id/et_edit_equity_stocks"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/equity_stocks"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/et_edit_name_stocks"
+                android:inputType="number"
+                tools:ignore="Autofill" />
+
+            <EditText
+                android:id="@+id/et_edit_net_profit_stocks"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/net_profit_stocks"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/et_edit_equity_stocks"
+                android:inputType="number"
+                tools:ignore="Autofill" />
+
+            <EditText
+                android:id="@+id/et_pbv_stocks"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/pbv"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/et_edit_net_profit_stocks"
+                android:inputType="none"
+                tools:ignore="Autofill" />
+
+            <EditText
+                android:id="@+id/et_eps_stocks"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/eps"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/et_pbv_stocks"
+                android:inputType="none"
+                tools:ignore="Autofill" />
+
+            <EditText
+                android:id="@+id/et_edit_share_stocks"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/shares_stocks"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/et_eps_stocks"
+                android:inputType="number"
+                tools:ignore="Autofill" />
+
+            <EditText
+                android:id="@+id/et_edit_price_share_stocks"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/shares_prices_stocks"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/et_edit_share_stocks"
+                android:inputType="number"
+                tools:ignore="Autofill" />
+
+            <Button
+                android:id="@+id/btn_delete"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="24dp"
+                android:backgroundTint="#BF0000"
+                android:text="@string/delete"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/et_edit_price_share_stocks"/>
+
+            <Button
+                android:id="@+id/btn_edit_stocks"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="8dp"
+                android:backgroundTint="@color/green_10"
+                android:text="@string/edit_stocks"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                app:layout_constraintEnd_toStartOf="@id/btn_delete"
+                app:layout_constraintTop_toBottomOf="@id/et_edit_price_share_stocks"/>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+</androidx.constraintlayout.widget.ConstraintLayout>
