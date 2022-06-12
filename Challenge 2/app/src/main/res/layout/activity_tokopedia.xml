@@ -1,0 +1,469 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="#EFEFEF"
+    android:layout_height="match_parent"
+    tools:context=".Tokopedia">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:ignore="UselessParent">
+        <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <androidx.appcompat.widget.Toolbar
+            android:background="@color/hijau"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="50dp">
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                    <Button
+                        android:id="@+id/pencarian"
+                        android:layout_toStartOf="@id/pesan"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:backgroundTint="@color/white"
+                        android:drawableLeft="@drawable/ic_search"
+                        android:gravity="left|center_vertical"
+                        android:text="Cari Sesuatu"
+                        android:textAllCaps="false"
+                        android:textColor="@color/black"
+                        tools:ignore="HardcodedText,RtlHardcoded" />
+
+                    <ImageView
+                    android:layout_marginLeft="10sp"
+                    android:layout_toLeftOf="@id/notif"
+                    android:id="@+id/pesan"
+                    android:src="@drawable/ic_baseline_message_24"
+                    android:layout_width="20sp"
+                    android:layout_height="match_parent"
+                        tools:ignore="ContentDescription,RtlHardcoded" />
+
+                    <ImageView
+                        android:layout_marginLeft="10sp"
+                        android:layout_toLeftOf="@id/keranjang"
+                        android:id="@+id/notif"
+                        android:src="@drawable/ic_baseline_notifications_24"
+                        android:layout_width="20sp"
+                        android:layout_height="match_parent"
+                        tools:ignore="ContentDescription,RtlHardcoded" />
+
+                    <ImageView
+                        android:layout_marginLeft="10sp"
+                        android:layout_toLeftOf="@id/other"
+                        android:id="@+id/keranjang"
+                        android:src="@drawable/ic_baseline_shopping_cart_24"
+                        android:layout_width="20sp"
+                        android:layout_height="match_parent"
+                        tools:ignore="ContentDescription,RtlHardcoded" />
+
+                    <ImageView
+                        android:layout_marginRight="10sp"
+                        android:id="@+id/other"
+                        android:layout_width="20sp"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginLeft="10sp"
+                        android:src="@drawable/ic_baseline_dehaze_24"
+                        tools:ignore="ContentDescription,RtlHardcoded" />
+
+                </RelativeLayout>
+
+            </LinearLayout>
+        </androidx.appcompat.widget.Toolbar>
+            <LinearLayout
+                android:background="@drawable/header"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"/>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_marginTop="-40dp"
+                    android:background="@drawable/splash"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    app:cardBackgroundColor="@color/white"
+                    app:cardCornerRadius="20dp"
+                    app:cardElevation="10dp"
+                    app:cardMaxElevation="12dp"
+                    app:cardPreventCornerOverlap="true"
+                    app:cardUseCompatPadding="true">
+
+                    <RelativeLayout
+                        android:layout_margin="10sp"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+                    <ImageView
+                        android:id="@+id/dompet"
+                        android:src="@drawable/ic_baseline_account_balance_wallet_24"
+                        android:layout_width="wrap_content"
+                        android:layout_height="20sp"
+                        tools:ignore="ContentDescription" />
+                        <TextView
+                            android:id="@+id/text1"
+                            android:layout_toRightOf="@id/dompet"
+                            android:text="Rp500.000"
+                            android:textStyle="bold"
+                            android:textColor="@color/black"
+                            android:textSize="15sp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            tools:ignore="HardcodedText,RtlHardcoded" />
+                        <TextView
+                            android:id="@+id/text2"
+                            android:layout_below="@id/text1"
+                            android:layout_toRightOf="@id/dompet"
+                            android:text="6 coins"
+                            android:textStyle="bold"
+                            android:textSize="15sp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            tools:ignore="HardcodedText,RtlHardcoded" />
+
+                        <ImageView
+                            android:layout_centerHorizontal="true"
+                            android:id="@+id/dompet2"
+                            android:src="@drawable/ic_baseline_stars_24"
+                            android:layout_width="wrap_content"
+                            android:layout_height="20sp"
+                            tools:ignore="ContentDescription" />
+                        <TextView
+                            android:id="@+id/text3"
+                            android:layout_toRightOf="@id/dompet2"
+                            android:text="Member Silver"
+                            android:textStyle="bold"
+                            android:textColor="@color/black"
+                            android:textSize="15sp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            tools:ignore="HardcodedText,RtlHardcoded" />
+                        <TextView
+                            android:layout_below="@id/text3"
+                            android:layout_toRightOf="@id/dompet2"
+                            android:text="10 Kupon baru"
+                            android:textStyle="bold"
+                            android:textSize="15sp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            tools:ignore="HardcodedText,RtlHardcoded" />
+                    </RelativeLayout>
+                </androidx.cardview.widget.CardView>
+
+            <HorizontalScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fillViewport="true">
+            <GridLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="-30sp"
+                android:columnCount="6"
+                android:rowCount="1"
+                tools:ignore="ScrollViewSize">
+
+                <TextView
+                    android:layout_width="80sp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10sp"
+                    android:text="Official Store"
+                    app:drawableTopCompat="@drawable/official_store"
+                    tools:ignore="HardcodedText" />
+                <TextView
+                    android:layout_width="80sp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10sp"
+                    android:text="Lihat Semua"
+                    app:drawableTopCompat="@drawable/lihat_semua"
+                    tools:ignore="HardcodedText" />
+                <TextView
+                    android:layout_width="80sp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10sp"
+                    android:text="Kebutuhan Harian"
+                    app:drawableTopCompat="@drawable/kebutuhan"
+                    tools:ignore="HardcodedText" />
+                <TextView
+                    android:layout_width="80sp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10sp"
+                    android:text="Perlengkapan Pesta"
+                    app:drawableTopCompat="@drawable/pesta"
+                    tools:ignore="HardcodedText" />
+                <TextView
+                    android:layout_width="80sp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10sp"
+                    android:text="top-up dan Tagihan"
+                    app:drawableTopCompat="@drawable/tagihan"
+                    tools:ignore="HardcodedText" />
+                <TextView
+                    android:layout_width="80sp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10sp"
+                    android:text="Office dan stationery"
+                    app:drawableTopCompat="@drawable/office"
+                    tools:ignore="HardcodedText" />
+            </GridLayout>
+        </HorizontalScrollView>
+            <ImageView
+                android:src="@drawable/iklantokped1"
+                android:layout_width="wrap_content"
+                android:layout_height="150sp"
+                tools:ignore="ContentDescription" />
+
+            <HorizontalScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fillViewport="true">
+                <GridLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="10sp"
+                    android:columnCount="6"
+                    android:rowCount="1"
+                    tools:ignore="ScrollViewSize">
+
+                    <TextView
+                        android:layout_width="80sp"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10sp"
+                        android:text="Peduli LIngdungi"
+                        app:drawableTopCompat="@drawable/peduli"
+                        tools:ignore="HardcodedText" />
+                    <TextView
+                        android:layout_width="80sp"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10sp"
+                        android:text="Bazar Hari Ini"
+                        app:drawableTopCompat="@drawable/bazzar"
+                        tools:ignore="HardcodedText" />
+                    <TextView
+                        android:layout_width="80sp"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10sp"
+                        android:text="Live Shopping"
+                        app:drawableTopCompat="@drawable/live"
+                        tools:ignore="HardcodedText" />
+                    <TextView
+                        android:layout_width="80sp"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10sp"
+                        android:text="Tokopedia Seru"
+                        app:drawableTopCompat="@drawable/seru"
+                        tools:ignore="HardcodedText" />
+                    <TextView
+                        android:layout_width="80sp"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10sp"
+                        android:text="Bangga Lokal"
+                        app:drawableTopCompat="@drawable/lokal"
+                        tools:ignore="HardcodedText" />
+                    <TextView
+                        android:layout_width="80sp"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10sp"
+                        android:text="Bayar Ditempat"
+                        app:drawableTopCompat="@drawable/cod"
+                        tools:ignore="HardcodedText" />
+                </GridLayout>
+            </HorizontalScrollView>
+
+            <TextView
+                android:layout_marginStart="10sp"
+                android:text="Kejar Diskon Special"
+                android:textSize="25sp"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                tools:ignore="HardcodedText" />
+
+            <RelativeLayout
+                android:layout_marginStart="10sp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/waktu1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Berakhir Dalam"
+                    android:textColor="@color/black"
+                    android:textSize="20sp"
+                    tools:ignore="HardcodedText" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toEndOf="@id/waktu1"
+                    android:background="@drawable/roundedcorner"
+                    android:text="04:12:30"
+                    android:textColor="@color/black"
+                    android:textSize="20sp"
+                    app:drawableStartCompat="@drawable/ic_baseline_timer_24"
+                    tools:ignore="HardcodedText" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:text="see all"
+                    android:textColor="@color/hijau"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    tools:ignore="HardcodedText" />
+            </RelativeLayout>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardBackgroundColor="@color/white"
+                app:cardCornerRadius="20dp"
+                app:cardElevation="10dp"
+                app:cardMaxElevation="12dp"
+                app:cardPreventCornerOverlap="true"
+                app:cardUseCompatPadding="true">
+                <HorizontalScrollView
+                    android:background="@color/hijau"
+                    android:layout_width="match_parent"
+                    android:layout_height="450sp"
+                    android:fillViewport="true">
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="wrap_content"
+                        android:layout_height="500sp"
+                        android:layout_margin="10sp">
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        app:cardCornerRadius="20dp"
+                        app:cardElevation="10dp"
+                        app:cardMaxElevation="12dp"
+                        app:cardPreventCornerOverlap="true"
+                        app:cardUseCompatPadding="true">
+
+                        <LinearLayout
+                            android:orientation="vertical"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_margin="10sp">
+
+                            <ImageView
+                                android:layout_width="200sp"
+                                android:layout_height="200sp"
+                                android:contentDescription="@string/iklantiga"
+                                android:src="@drawable/core" />
+
+                            <TextView
+
+                                android:layout_width="200sp"
+                                android:layout_height="match_parent"
+                                android:text="Processor Intel Core i5 12400F Alder Lake LGA1700 Harus Pasang VGA"
+                                android:textColor="@color/black"
+                                android:textSize="15sp"
+                                tools:ignore="HardcodedText" />
+
+                            <TextView
+                                android:layout_width="200sp"
+                                android:layout_height="match_parent"
+                                android:text="Rp2.660.000"
+                                android:textStyle="bold"
+                                android:textColor="@color/black"
+                                android:textSize="15sp"
+                                tools:ignore="HardcodedText" />
+
+
+                            <TextView
+                                android:text="Denpasar"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                tools:ignore="HardcodedText"
+                                app:drawableStartCompat="@drawable/official_store" />
+
+                            <TextView
+                                android:text="4.8 | Terjual 200"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                app:drawableStartCompat="@drawable/ic_baseline_star_24"
+                                tools:ignore="HardcodedText" />
+                        </LinearLayout>
+
+
+                    </androidx.cardview.widget.CardView>
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="10dp"
+                            app:cardCornerRadius="20dp"
+                            app:cardElevation="10dp"
+                            app:cardMaxElevation="12dp"
+                            app:cardPreventCornerOverlap="true"
+                            app:cardUseCompatPadding="true">
+
+
+
+                            <LinearLayout
+                                android:orientation="vertical"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:layout_margin="10sp">
+
+                                <ImageView
+                                    android:layout_width="200sp"
+                                    android:layout_height="200sp"
+                                    android:contentDescription="@string/iklantiga"
+                                    android:src="@drawable/tape" />
+
+                                <TextView
+                                    android:id="@+id/isi1"
+                                    android:layout_width="200sp"
+                                    android:layout_height="match_parent"
+                                    android:text="OPP Tape Bening / Coklat Startape uk. 48mm x 90 Yard x 45 micron - Cokelat"
+                                    android:textColor="@color/black"
+                                    android:textSize="15sp"
+                                    tools:ignore="HardcodedText" />
+
+                                <TextView
+                                    android:layout_width="200sp"
+                                    android:layout_height="match_parent"
+                                    android:text="Rp7.700"
+                                    android:textStyle="bold"
+                                    android:textColor="@color/black"
+                                    android:textSize="15sp"
+                                    tools:ignore="HardcodedText" />
+
+                                <TextView
+                                    android:text="Tangerang"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    tools:ignore="HardcodedText"
+                                    app:drawableStartCompat="@drawable/official_store" />
+
+                                <TextView
+                                    android:text="4.9 | Terjual 1.9rb"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    app:drawableStartCompat="@drawable/ic_baseline_star_24"
+                                    tools:ignore="HardcodedText" />
+                            </LinearLayout>
+                        </androidx.cardview.widget.CardView>
+                    </LinearLayout>
+                </HorizontalScrollView>
+            </androidx.cardview.widget.CardView>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>
