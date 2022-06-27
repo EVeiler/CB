@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">Challenge-ch8</string>
+    <string name="title_activity_register_layout">RegisterLayout</string>
+    <string name="title_activity_home_layout">HomeLayout</string>
+    <string name="title_activity_detail_layout">DetailLayout</string>
+</resources>
